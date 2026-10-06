@@ -1,0 +1,132 @@
+{
+ "title": "Grapes Ready for Picking: Investigating the Readiness of Precision Viticulture Datasets for Scene Reconstruction",
+ "short_title": "Grapes Ready for Picking",
+ "authors": [
+  {
+   "name": "Michał Jan Włodarczyk",
+   "affiliations": [
+    1
+   ],
+   "equal_contribution": true,
+   "orcid": "0009-0008-8374-5396"
+  },
+  {
+   "name": "Katarzyna Wasielewska-Michniewska",
+   "affiliations": [
+    1
+   ],
+   "equal_contribution": true,
+   "orcid": "0000-0002-3763-2373"
+  },
+  {
+   "name": "Przemysław Hołda",
+   "affiliations": [
+    1
+   ],
+   "equal_contribution": false,
+   "orcid": "0000-0001-5425-7440"
+  },
+  {
+   "name": "Maria Ganzha",
+   "affiliations": [
+    1
+   ],
+   "equal_contribution": false,
+   "orcid": "0000-0001-7714-4844"
+  },
+  {
+   "name": "Marcin Paprzycki",
+   "affiliations": [
+    1
+   ],
+   "equal_contribution": false,
+   "orcid": "0000-0002-8069-2152"
+  },
+  {
+   "name": "Nico Heider",
+   "affiliations": [
+    2
+   ],
+   "equal_contribution": false,
+   "orcid": "0009-0008-4483-9023"
+  },
+  {
+   "name": "Martin Schieck",
+   "affiliations": [
+    2
+   ],
+   "equal_contribution": true,
+   "orcid": "0000-0002-5257-9646"
+  },
+  {
+   "name": "Bogdan Franczyk",
+   "affiliations": [
+    2
+   ],
+   "equal_contribution": true,
+   "orcid": "0000-0002-5740-2946"
+  },
+  {
+   "name": "Tasuku Makabe",
+   "affiliations": [
+    3
+   ],
+   "equal_contribution": false,
+   "orcid": "0000-0001-6668-0449"
+  },
+  {
+   "name": "Iori Yanokura",
+   "affiliations": [
+    3
+   ],
+   "equal_contribution": false,
+   "orcid": "0009-0009-4433-0013"
+  },
+  {
+   "name": "Kei Okada",
+   "affiliations": [
+    3
+   ],
+   "equal_contribution": false,
+   "orcid": "0000-0001-6606-6692"
+  }
+ ],
+ "affiliations": [
+  {
+   "id": 1,
+   "name": "Systems Research Institute, Polish Academy of Sciences, Warsaw, Poland"
+  },
+  {
+   "id": 2,
+   "name": "Leipzig University, Germany"
+  },
+  {
+   "id": 3,
+   "name": "University of Tokyo, Japan"
+  }
+ ],
+ "equal_contribution_note": "Equal Contribution",
+ "contact": {
+  "name": "Michał Jan Włodarczyk",
+  "role": "corresponding author",
+  "email": "michal.wlodarczyk@ibspan.waw.pl",
+  "affiliation": "Systems Research Institute, Polish Academy of Sciences, Warsaw, Poland"
+ },
+ "keywords": [
+  "precision viticulture",
+  "scene reconstruction",
+  "3D Gaussian Splatting",
+  "structure from motion",
+  "dataset characterization",
+  "UAV imagery",
+  "agricultural robotics"
+ ],
+ "links": {
+  "paper": null,
+  "archive_doi": null,
+  "code": "https://github.com/DRAGONS-Project/grapes-ready-for-picking",
+  "catalog": "https://dragons-project.github.io/grapes-ready-for-picking/"
+ },
+ "funding": "This research was funded by the project \"DRAGONS: Drones for Remote Autonomous Gathering of Plant Samples\" (2025-2028) which is part of the European Interest Group (EIG) CONCERT-Japan initiative.",
+ "acknowledgement": "We gratefully acknowledge Polish high-performance computing infrastructure PLGrid (HPC Centers: ACK Cyfronet AGH, WCSS) for providing computer facilities and support within computational grant no. PLG/2026/019125"
+}

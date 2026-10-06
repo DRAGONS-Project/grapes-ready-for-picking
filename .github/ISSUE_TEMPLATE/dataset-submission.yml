@@ -1,0 +1,112 @@
+name: Dataset submission
+description: Share a vineyard dataset.
+title: "[Dataset] "
+labels: ["dataset-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing a dataset. This form collects vineyard datasets from practitioners in academia and outside it. The ten characterized datasets of the catalog give a baseline to compare against, and the paper gives a set of recommendations to consider when collecting data.
+  - type: input
+    id: name
+    attributes:
+      label: Dataset name
+    validations:
+      required: true
+  - type: input
+    id: deposit
+    attributes:
+      label: Deposit URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: data-paper
+    attributes:
+      label: Data paper DOI or URL
+  - type: input
+    id: licence
+    attributes:
+      label: Licence as stated by the deposit
+      description: Write "not stated" if the deposit states no licence.
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access
+      options:
+        - public download
+        - after registration
+        - on request
+        - restricted
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - UAV
+        - ground robot
+        - handheld
+        - fixed
+        - other
+  - type: checkboxes
+    id: modality
+    attributes:
+      label: Modality
+      options:
+        - label: RGB
+        - label: RGB-D
+        - label: multispectral
+        - label: thermal
+        - label: LiDAR
+        - label: other
+  - type: dropdown
+    id: capture-type
+    attributes:
+      label: Capture type
+      options:
+        - video
+        - interval stills
+        - isolated stills
+        - point clouds only
+  - type: input
+    id: frame-rate
+    attributes:
+      label: Frame rate or capture interval
+  - type: input
+    id: sequences
+    attributes:
+      label: Number of sequences or flights
+  - type: textarea
+    id: dates
+    attributes:
+      label: Acquisition dates and phenological stage
+  - type: input
+    id: site
+    attributes:
+      label: Site and country
+  - type: dropdown
+    id: trajectory
+    attributes:
+      label: Camera trajectory, GNSS/RTK or flight log deposited
+      options:
+        - "yes"
+        - "no"
+        - partly
+  - type: textarea
+    id: annotations
+    attributes:
+      label: Annotations
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Your relation to the dataset
+      options:
+        - author
+        - user
+        - other
+  - type: input
+    id: contact
+    attributes:
+      label: Contact e-mail (optional)

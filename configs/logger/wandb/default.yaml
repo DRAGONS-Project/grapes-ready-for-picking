@@ -1,0 +1,6 @@
+_target_: logger.wandb.WandBLogger
+# _partial_: true is required — setup_logger() calls instantiate(config.logger)(config=..., dir=..., group=..., name=...)
+# which means instantiate must return a callable (partial), not a fully-constructed instance.
+_partial_: true
+project: ??? # required: set your W&B project name here
+# entity: your-wandb-entity   # uncomment and set if needed

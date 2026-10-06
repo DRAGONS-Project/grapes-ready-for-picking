@@ -1,0 +1,352 @@
+{
+ "name": "datasets_found",
+ "paper_number": "Table 1",
+ "caption": "Overview of basic information about datasets (images or videos) identified during the selection process. License gives the licence declared by the deposit, and not stated means that the deposit declares none. Documentation indicates whether the acquisition is described in a data paper or a README, and Characterized indicates whether the dataset was characterized in this section or, if not, the reason for its exclusion. ᵃThe deposit states CC-BY-NC-SA-4.0 and the README CC-BY-NC-4.0. ᵇThe record states 2078 files. ᶜThe paper states 2160 files.",
+ "columns": [
+  "Dataset",
+  "License",
+  "Public access",
+  "Documentation",
+  "Size",
+  "Characterized"
+ ],
+ "rows": [
+  [
+   "Bacchus (BLT)",
+   "CC-BY-4.0",
+   "after registration",
+   "yes",
+   "600 GB of raw multimodal data, 9.1 GB downloadable subset",
+   "yes"
+  ],
+  [
+   "Bodegas T. Gauda",
+   "CC-BY-4.0",
+   "yes",
+   "yes",
+   "21.7 GB (40 MP4 files, 29 zip archives)",
+   "yes"
+  ],
+  [
+   "Embrapa",
+   "CC-BY-NC-SA-4.0ᵃ",
+   "yes",
+   "yes",
+   "1.3 GB (inc. 300 jpg files)",
+   "yes"
+  ],
+  [
+   "EscaYard",
+   "CC-BY-4.0",
+   "yes",
+   "yes",
+   "8.6 GB (multimodal)",
+   "yes"
+  ],
+  [
+   "GrapeCS-ML",
+   "not stated",
+   "yes",
+   "yes",
+   "631 MB (2327 filesᵇ)",
+   "yes"
+  ],
+  [
+   "GrapeSet",
+   "CC-BY-4.0",
+   "yes",
+   "yes",
+   "878.4 MB (inc. 3910 jpeg filesᶜ)",
+   "yes"
+  ],
+  [
+   "GrapeNet",
+   "CC-BY-4.0",
+   "yes",
+   "yes",
+   "4.4 GB (25425 jpg files)",
+   "no (single images)"
+  ],
+  [
+   "MOTS UAV",
+   "CC-BY-4.0",
+   "yes",
+   "yes",
+   "87 GB (11 MP4 files, png files with frames)",
+   "yes"
+  ],
+  [
+   "Multi. Botrytis",
+   "CC-BY-4.0",
+   "yes",
+   "yes",
+   "31.1 GB (16,504 tif files)",
+   "yes"
+  ],
+  [
+   "VineLiDAR",
+   "CC-BY-4.0",
+   "yes",
+   "yes",
+   "2.8 GB (10 laz files)",
+   "yes"
+  ],
+  [
+   "GrapeSLAM",
+   "CC-BY-4.0",
+   "yes",
+   "yes",
+   "40.4 GB (24 MOV files, 24 xlsx flight logs)",
+   "yes"
+  ],
+  [
+   "LeafDataset",
+   "CC0: Public Domain",
+   "yes",
+   "limited",
+   "8393 files (inc. 4195 jpg)",
+   "no (single leaf images)"
+  ],
+  [
+   "Grape Leaves Disease Dataset",
+   "CC-BY-4.0",
+   "yes",
+   "limited",
+   "2.8 GB (inc. 18000 images)",
+   "no (single leaf images)"
+  ],
+  [
+   "LDD",
+   "CC-BY-NC-SA-4.0",
+   "restricted",
+   "yes",
+   "29.6 GB (1092 images)",
+   "no (single images, restricted access)"
+  ],
+  [
+   "Grape-Instance-Segmentation-For-Viticulture",
+   "MIT",
+   "yes",
+   "no",
+   "972 files (inc. 970 jpg)",
+   "no (single images)"
+  ],
+  [
+   "UAV-based Vine Leaf Instance Segmentation",
+   "CC-BY-4.0",
+   "yes",
+   "no",
+   "2256 png files",
+   "no (instance-segmentation images)"
+  ],
+  [
+   "Synthetic RGB Data for Grapevine Detection",
+   "not stated",
+   "yes",
+   "no",
+   "2 GB (2036 files, inc. 1000 png and JSON annotations)",
+   "no (synthetic imagery)"
+  ],
+  [
+   "Grape Trunk Dataset",
+   "CC-BY-4.0",
+   "yes",
+   "no",
+   "3.6 GB (1300 jpg files)",
+   "no (annotated single images)"
+  ]
+ ],
+ "row_links": [
+  [
+   {
+    "key": "Polvara:2024",
+    "kind": "paper",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22228"
+   },
+   {
+    "key": "university_of_lincoln_2023_10103988",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.10103988"
+   }
+  ],
+  [
+   {
+    "key": "ARIZASENTIS2023108848",
+    "kind": "paper",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2352340922010514"
+   },
+   {
+    "key": "mar_ariza_sentis_2021_7330951",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.7330951"
+   }
+  ],
+  [
+   {
+    "key": "thiago_santos_2019_3361736",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.3361736"
+   }
+  ],
+  [
+   {
+    "key": "VELEZ2024110497",
+    "kind": "paper",
+    "url": "https://doi.org/10.1016/j.dib.2024.110497"
+   },
+   {
+    "key": "velez_2023_10362568",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.10362568"
+   }
+  ],
+  [
+   {
+    "key": "GrapeCS-ML:2019",
+    "kind": "paper",
+    "url": "https://doi.org/10.1109/ACCESS.2018.2875862"
+   },
+   {
+    "key": "grapecs-ml-ds",
+    "kind": "data",
+    "url": "https://researchoutput.csu.edu.au/en/datasets/grape-image-database/"
+   }
+  ],
+  [
+   {
+    "key": "jimaging11020034",
+    "kind": "paper",
+    "url": "https://www.mdpi.com/2313-433X/11/2/34"
+   },
+   {
+    "key": "quinones_2024_14019981",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.14019981"
+   }
+  ],
+  [
+   {
+    "key": "grapenetdataset2025",
+    "kind": "data",
+    "url": "https://doi.org/10.17632/3j3zzsc7wb.1"
+   }
+  ],
+  [
+   {
+    "key": "ARIZASENTIS2024110432",
+    "kind": "paper",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2352340924004013"
+   },
+   {
+    "key": "mar_2024_10625595",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.10625595"
+   }
+  ],
+  [
+   {
+    "key": "VELEZ2023108876",
+    "kind": "paper",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2352340922010794"
+   }
+  ],
+  [
+   {
+    "key": "VELEZ2023109686",
+    "kind": "paper",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2352340923007655"
+   },
+   {
+    "key": "velez_2023_8113105",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.8113105"
+   }
+  ],
+  [
+   {
+    "key": "wang2025grapeslam",
+    "kind": "paper",
+    "url": "https://doi.org/10.1016/j.dib.2025.111495"
+   },
+   {
+    "key": "wang_2025_14658376",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.14658376"
+   }
+  ],
+  [
+   {
+    "key": "Leaf2026",
+    "kind": "data",
+    "url": "https://www.kaggle.com/datasets/yusufmurtaza01/grape-leaf-diseases"
+   }
+  ],
+  [
+   {
+    "key": "Anan2024",
+    "kind": "data",
+    "url": "https://data.mendeley.com/datasets/378c69nwk5/1"
+   }
+  ],
+  [
+   {
+    "key": "rossi_2024_10573036",
+    "kind": "paper",
+    "url": "https://doi.org/10.1007/978-3-031-06430-2_32"
+   }
+  ],
+  [
+   {
+    "key": "DatasetSeg2025",
+    "kind": "data",
+    "url": "https://www.kaggle.com/datasets/kaanarikkk/grape-instance-segmentation-for-viticulture"
+   }
+  ],
+  [
+   {
+    "key": "jan_richard_2026",
+    "kind": "data",
+    "url": "https://www.kaggle.com/ds/10636200"
+   }
+  ],
+  [
+   {
+    "key": "syntchData",
+    "kind": "data",
+    "url": "https://www.kaggle.com/datasets/carmenca/synthetic-rgb-data-for-grapevine-detection"
+   }
+  ],
+  [
+   {
+    "key": "andre_silva_aguiar_2021_5139598",
+    "kind": "data",
+    "url": "https://doi.org/10.5281/zenodo.5139598"
+   }
+  ]
+ ],
+ "notes": [
+  "ᵃThe deposit states CC-BY-NC-SA-4.0 and the README CC-BY-NC-4.0.",
+  "ᵇThe record states 2078 files.",
+  "ᶜThe paper states 2160 files."
+ ],
+ "row_ids": [
+  "BLT",
+  "BTG",
+  "EMB",
+  "ESC",
+  "GCS",
+  "GST",
+  null,
+  "MOTS",
+  "BOT",
+  "VLD",
+  "SLAM",
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ]
+}

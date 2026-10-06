@@ -1,0 +1,13 @@
+# Replace with your dataset config.
+# Example:
+#   _target_: dataset.my_dataset.MyDataset
+#   root: /path/to/data
+#   split: train
+_target_: dataset.base.BaseDataset
+
+# DataLoader kwargs (used in experiment/run.py via instantiate)
+dataloader:
+  batch_size: 32
+  num_workers: 4
+  shuffle: true
+  pin_memory: true

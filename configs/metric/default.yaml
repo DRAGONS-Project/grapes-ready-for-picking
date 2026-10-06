@@ -1,0 +1,8 @@
+# Add one entry per metric. Each value is instantiated as a BaseMetric subclass.
+# Example:
+#   accuracy:
+#     _target_: metric.classification.AccuracyMetric
+#   loss:
+#     _target_: metric.regression.MSEMetric
+example:
+  _target_: metric.base.BaseMetric

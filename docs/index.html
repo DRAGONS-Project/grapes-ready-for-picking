@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grapes Ready for Picking</title>
+  <meta name="description" content="A living catalog of public vineyard datasets for 3D scene reconstruction, with a readiness class for each dataset that contains overlapping views.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script defer src="./static/js/catalog.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#catalog">Skip to the catalog</a>
+
+<header class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title"><span class="title-emoji" aria-hidden="true">&#x1F347;</span> <!--@title-->Grapes Ready for Picking: Investigating the Readiness of Precision Viticulture Datasets for Scene Reconstruction<!--/@title--></h1>
+          <div class="is-size-5 publication-authors">
+            <!--@authors--><span class="author-block">Michał Jan Włodarczyk<sup>1,&dagger;</sup>,</span>
+<span class="author-block">Katarzyna Wasielewska-Michniewska<sup>1,&dagger;</sup>,</span>
+<span class="author-block">Przemysław Hołda<sup>1</sup>,</span>
+<span class="author-block">Maria Ganzha<sup>1</sup>,</span>
+<span class="author-block">Marcin Paprzycki<sup>1</sup>,</span>
+<span class="author-block">Nico Heider<sup>2</sup>,</span>
+<span class="author-block">Martin Schieck<sup>2,&dagger;</sup>,</span>
+<span class="author-block">Bogdan Franczyk<sup>2,&dagger;</sup>,</span>
+<span class="author-block">Tasuku Makabe<sup>3</sup>,</span>
+<span class="author-block">Iori Yanokura<sup>3</sup>,</span>
+<span class="author-block">Kei Okada<sup>3</sup></span><!--/@authors-->
+          </div>
+          <div class="is-size-6 publication-authors publication-affiliations">
+            <!--@affiliations--><span class="author-block"><sup>1</sup>Systems Research Institute, Polish Academy of Sciences, Warsaw, Poland</span>
+<span class="author-block"><sup>2</sup>Leipzig University, Germany</span>
+<span class="author-block"><sup>3</sup>University of Tokyo, Japan</span>
+<span class="author-block"><sup>&dagger;</sup>Equal Contribution</span><!--/@affiliations-->
+          </div>
+          <div class="publication-links">
+            <span class="link-block" hidden>
+              <a id="btn-paper" class="button is-normal is-rounded is-dark">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 1h5l4 4v10H4zM9 1v4h4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://github.com/DRAGONS-Project/grapes-ready-for-picking" class="button is-normal is-rounded is-dark">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></span>
+                <span>Code</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <button id="btn-archive" class="button is-normal is-rounded is-dark" disabled title="The archive DOI appears here once the release is deposited.">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1.5 2.5h13v3h-13zM2.5 5.5v8h11v-8M6 8.5h4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+                <span>Archive</span>
+              </button>
+            </span>
+            <span class="link-block">
+              <a href="#submit" class="button is-normal is-rounded is-dark">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 11V2M4.5 5.5 8 2l3.5 3.5M2 10v4h12v-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+                <span>Submit a dataset</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section" id="abstract">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p><!--@abstract-->Public datasets of vineyard imagery were collected for detection, segmentation and disease mapping, and they are now being proposed as a source for 3D scene reconstruction. The properties that reconstruction depends on, such as view overlap, parallax and frame spacing, are often omitted from their documentation, so it is unclear which of these datasets can be reconstructed. The aim of this study is to measure that for every publicly available vineyard dataset. A structured search identifies eighteen datasets, of which ten contain overlapping views. These ten are characterized under a schema of thirty-six documented and measured properties, and every sequence that registers is reconstructed with one fixed pipeline of structure from motion followed by radiance field reconstruction via 3D Gaussian Splatting, giving twenty-eight reconstructions on two held-out splits. Registration is decided by the capture rather than by the dataset, novel-view quality varies as much within a dataset as between datasets, and frame spacing is the one capture property that limits reconstruction. For the datasets that fail to register or that reconstruct with visible artifacts, three preprocessing steps are tested as ablations. Of these three steps, one restores registration, one improves rendered quality only marginally, and one, which masks static content that contaminates the reconstruction, exposes a fault in the camera motion that masking alone cannot fix. The schema and the pipeline give a procedure that can be applied to any vineyard dataset, existing or new, and the results are published as an open online catalog meant to help researchers choose data and to grow as further datasets are assessed in the same way.<!--/@abstract--></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint" id="catalog" aria-labelledby="catalog-title">
+  <div class="container is-max-widescreen has-text-centered">
+    <h2 class="title is-3" id="catalog-title">The catalog</h2>
+    <p class="lede">The ten characterized datasets carry their readiness class. Select one to open its documented and measured properties.</p>
+    <div class="catalog-tools">
+      <label class="label" for="catalog-search">Search the catalog</label>
+      <input class="input" id="catalog-search" type="search" autocomplete="off">
+      <p class="catalog-count" id="catalog-count" role="status" aria-live="polite"></p>
+    </div>
+    <div class="table-wrap" id="catalog-wrap" role="region" aria-labelledby="catalog-title" tabindex="0">
+      <noscript><p class="notice">The catalog table needs JavaScript.</p></noscript>
+    </div>
+    <ul class="table-notes" id="catalog-notes"></ul>
+    <p class="correction">Found a value that differs from a dataset's documentation or data?
+      <a class="button is-small is-rounded is-outlined" href="https://github.com/DRAGONS-Project/grapes-ready-for-picking/issues/new?template=correction.yml">Report a correction</a></p>
+  </div>
+</section>
+
+<section class="section" id="readiness" aria-labelledby="readiness-title">
+  <div class="container is-max-widescreen has-text-centered">
+    <h2 class="title is-3" id="readiness-title">Readiness</h2>
+    <figure class="figure figure-wide">
+      <img src="./static/images/readiness_tree.svg" width="2074" height="1268" loading="lazy"
+           alt="Decision tree. First question: does the imagery provide overlapping views? If yes, do at least half of the frames register in every repeated run? No leads to unstable (ripening), the BLT front camera. Yes leads to: does registration or color require a validated preprocessing step? Yes leads to ready with treatment (ripening), Botrytis; no leads to ready (ripe), Bodegas T. Gauda, GrapeMOTS, GrapeSLAM and Embrapa video. If the imagery has no overlapping views: does it ship geometry or imagery that can constrain a reconstruction? Yes leads to prior only (ripening), EscaYard and VineLiDAR; no leads to not ready (unripe), GrapeCS-ML, GrapeSet and Embrapa stills.">
+      <figcaption><!--@cap:readiness_tree-->Decision procedure that assigns a readiness class from measured properties.<!--/@cap:readiness_tree--></figcaption>
+    </figure>
+    <p class="lede">To place a new dataset, start at the top question and follow its measured values down to a leaf, which names its class.</p>
+  </div>
+</section>
+
+<section class="section section-tint" id="submit" aria-labelledby="submit-title">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3" id="submit-title">Submit a dataset</h2>
+    <p class="centered-text">This is a place for practitioners to share the vineyard data they collect, in academia and outside it. The ten datasets above give a baseline to compare against, and the paper gives a set of recommendations to consider when collecting data.</p>
+    <div class="buttons is-centered">
+      <a class="button is-dark is-rounded" href="https://github.com/DRAGONS-Project/grapes-ready-for-picking/issues/new?template=dataset-submission.yml">Open the submission form</a>
+      <a class="button is-rounded is-outlined" href="mailto:michal.wlodarczyk@ibspan.waw.pl?subject=Dataset%20submission%3A%20%3Cname%3E&amp;body=Dataset%20name%3A%20%0ADeposit%20URL%3A%20%0AData%20paper%20DOI%20or%20URL%3A%20%0ALicence%20as%20stated%20by%20the%20deposit%20%28or%20%22not%20stated%22%29%3A%20%0AAccess%20%28public%20download%20/%20after%20registration%20/%20on%20request%20/%20restricted%29%3A%20%0APlatform%20%28UAV%20/%20ground%20robot%20/%20handheld%20/%20fixed%20/%20other%29%3A%20%0AModality%20%28RGB%2C%20RGB-D%2C%20multispectral%2C%20thermal%2C%20LiDAR%2C%20other%29%3A%20%0ACapture%20type%20%28video%20/%20interval%20stills%20/%20isolated%20stills%20/%20point%20clouds%20only%29%3A%20%0AFrame%20rate%20or%20capture%20interval%3A%20%0ANumber%20of%20sequences%20or%20flights%3A%20%0AAcquisition%20dates%20and%20phenological%20stage%3A%20%0ASite%20and%20country%3A%20%0ACamera%20trajectory%2C%20GNSS/RTK%20or%20flight%20log%20deposited%20%28yes%20/%20no%20/%20partly%29%3A%20%0AAnnotations%3A%20%0AYour%20relation%20to%20the%20dataset%20%28author%20/%20user%20/%20other%29%3A%20%0AContact%20e-mail%20%28optional%29%3A%20">Submit by e-mail</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="container is-max-desktop content has-text-centered">
+    <h2 class="title is-3" id="contact-title">Contact</h2>
+    <p><strong><!--@contact_name-->Michał Jan Włodarczyk<!--/@contact_name--></strong>, corresponding author<br>
+      <a href="mailto:michal.wlodarczyk@ibspan.waw.pl"><!--@contact_email-->michal.wlodarczyk@ibspan.waw.pl<!--/@contact_email--></a><br>
+      <!--@contact_affiliation-->Systems Research Institute, Polish Academy of Sciences, Warsaw, Poland<!--/@contact_affiliation--></p>
+    <p>Questions are also welcome in the <a href="https://github.com/DRAGONS-Project/grapes-ready-for-picking/issues">repository issues</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="citation" aria-labelledby="citation-title">
+  <div class="container is-max-desktop content has-text-centered">
+    <h2 class="title is-3" id="citation-title">Citation</h2>
+    <p>The paper is not published yet. A citation will be available here once it is.</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p><!--@funding-->This research was funded by the project &quot;DRAGONS: Drones for Remote Autonomous Gathering of Plant Samples&quot; (2025-2028) which is part of the European Interest Group (EIG) CONCERT-Japan initiative.<!--/@funding--></p>
+          <p><!--@acknowledgement-->We gratefully acknowledge Polish high-performance computing infrastructure PLGrid (HPC Centers: ACK Cyfronet AGH, WCSS) for providing computer facilities and support within computational grant no. PLG/2026/019125<!--/@acknowledgement--></p>
+          <p>Code: MIT (<a href="https://github.com/DRAGONS-Project/grapes-ready-for-picking/blob/main/LICENSE">LICENSE</a>). Catalog data licence: to be confirmed.</p>
+          <p>This website template was taken from <a href="https://nerfies.github.io">Nerfies</a> (<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

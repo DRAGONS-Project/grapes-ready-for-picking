@@ -1,0 +1,15 @@
+# Standardized reconstruction protocol shared across all datasets/scenes,
+# so cross-dataset comparisons reflect dataset content rather than pipeline settings.
+
+frames:
+  fps: 2.0 # frame sampling rate from source video
+  max_dim: 1600 # resize longest image side to this many pixels
+  max_frames: 200 # cap on number of extracted frames (evenly subsampled if exceeded)
+
+colmap:
+  camera_model: OPENCV
+
+train:
+  iters: 7000
+  save_every: 500
+  holdout_every: 8 # every Nth frame (sorted order) is held out for evaluation

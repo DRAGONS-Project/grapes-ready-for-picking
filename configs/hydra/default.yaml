@@ -1,0 +1,4 @@
+run:
+  # Local default — override with your cluster scratch path for SLURM runs.
+  # The two-level date/time structure is required by utils/hydra.py (preprocess_config).
+  dir: ${hydra:runtime.cwd}/logs/${now:%Y-%m-%d}/${now:%H-%M-%S}

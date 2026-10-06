@@ -1,0 +1,141 @@
+{
+ "name": "readiness",
+ "paper_number": "Table 7",
+ "caption": "Readiness of the characterized datasets for reconstruction under the fixed configuration, together with the measured values on which each verdict rests. Readiness names the class defined in Section 6.1, with ripe, ripening or unripe in brackets. Registered is the share of frames that the largest model holds, and stability the number of registered runs out of the repeated runs of the same input, or single run where the input was not repeated. PSNR is the range on the every-8th split over the n reconstructed sequences of the dataset. Scale anchor names the external reference shipped with the dataset and, where a reconstructed camera path could be aligned to it, the alignment error, which includes the error of the reference itself. The limit column names the measured property that sets the class or, for a ripe dataset, the caveat that applies to it, and the evidence column gives the tables, figures and sections from which the row is taken. Dashes mark values that do not apply to a dataset without registered imagery.",
+ "columns": [
+  "Dataset",
+  "Readiness",
+  "Registered, %",
+  "Stability",
+  "PSNR, dB (n)",
+  "Scale anchor",
+  "Limit or caveat",
+  "Evidence"
+ ],
+ "rows": [
+  [
+   "Bodegas Terras Gauda",
+   "ready (ripe), per part",
+   "100 per part, 40 per clip",
+   "3 of 3",
+   "15.6 to 24.1 (12)",
+   "none deposited",
+   "parts of a clip do not join",
+   "Tables C2, 3, Figure 10"
+  ],
+  [
+   "GrapeMOTS",
+   "ready (ripe)",
+   "100",
+   "3 of 3",
+   "21.0 to 25.1 (6)",
+   "none deposited",
+   "one pass backlit, treatable",
+   "Tables C2, 3, 5"
+  ],
+  [
+   "GrapeSLAM",
+   "ready (ripe)",
+   "100",
+   "single run",
+   "20.2 (1)",
+   "flight log, 0.06 m",
+   "one of 24 videos characterized",
+   "Tables C2, 3, Section 4.4"
+  ],
+  [
+   "Multispectral Botrytis",
+   "ready with treatment (ripening)",
+   "89 to 100, green band",
+   "single run",
+   "14.7 to 23.5 (4)",
+   "EXIF GPS, about 1 m",
+   "bands need alignment for RGB",
+   "Tables C2, 4"
+  ],
+  [
+   "Bacchus Long-Term",
+   "unstable (ripening)",
+   "1 to 100, by session",
+   "0 to 4 of 5",
+   "10.2 to 20.8 (4)",
+   "RTK, 0.07 to 0.32 m",
+   "front camera registers in 0 to 4 of 5 runs",
+   "Tables C2, 6, Figure 10"
+  ],
+  [
+   "Embrapa WGISD",
+   "not ready (unripe), video frames ready",
+   "0.7 stills, 100 video",
+   "single run",
+   "22.3 (1), video",
+   "none",
+   "the photographs are single views",
+   "Tables C2, 3"
+  ],
+  [
+   "EscaYard",
+   "prior only (ripening)",
+   "0.8",
+   "–",
+   "–",
+   "EXIF GPS, trunk survey",
+   "products shipped, not frames",
+   "Table C2"
+  ],
+  [
+   "VineLiDAR",
+   "prior only (ripening)",
+   "no imagery",
+   "–",
+   "–",
+   "coordinate system, 8 of 10 files",
+   "point clouds only",
+   "Table C2"
+  ],
+  [
+   "GrapeCS-ML",
+   "not ready (unripe)",
+   "3.2",
+   "–",
+   "–",
+   "none",
+   "single views",
+   "Table C2"
+  ],
+  [
+   "GrapeSet",
+   "not ready (unripe)",
+   "5.0",
+   "–",
+   "–",
+   "none",
+   "rotated objects, fixed camera",
+   "Table C2"
+  ]
+ ],
+ "row_ids": [
+  "BTG",
+  "MOTS",
+  "SLAM",
+  "BOT",
+  "BLT",
+  "EMB",
+  "ESC",
+  "VLD",
+  "GCS",
+  "GST"
+ ],
+ "row_classes": [
+  "ripe",
+  "ripe",
+  "ripe",
+  "ripening",
+  "ripening",
+  "unripe",
+  "ripening",
+  "ripening",
+  "unripe",
+  "unripe"
+ ]
+}

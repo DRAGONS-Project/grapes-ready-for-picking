@@ -1,0 +1,32 @@
+name: Correction
+description: Report a value in the catalog that differs from the dataset's documentation or data.
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: input
+    id: dataset
+    attributes:
+      label: Dataset
+  - type: input
+    id: table-column
+    attributes:
+      label: Table and column
+  - type: input
+    id: shown
+    attributes:
+      label: Value shown in the catalog
+  - type: input
+    id: correct
+    attributes:
+      label: Correct value
+  - type: input
+    id: source
+    attributes:
+      label: Where the correct value is documented
+      description: A URL, a DOI, or a file and line in the deposit.
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment

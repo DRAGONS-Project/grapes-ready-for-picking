@@ -1,0 +1,6 @@
+# Replace with your model config.
+# Example:
+#   _target_: model.my_model.MyModel
+#   hidden_dim: 256
+#   num_layers: 4
+_target_: model.base.BaseModel

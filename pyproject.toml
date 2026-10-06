@@ -1,0 +1,73 @@
+[project]
+name = "project"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # Core experiment stack
+    "torch>=2.4.0",
+    "hydra-core>=1.3.0",
+    "omegaconf>=2.3.0",
+    "wandb>=0.17.0",
+    "tqdm>=4.66.0",
+    "numpy>=2.0.0",
+    "ruff",
+]
+
+[project.optional-dependencies]
+# Reconstruction pipeline: video -> frames -> COLMAP SfM -> 3DGS.
+recon = [
+    "pycolmap>=0.6.1",
+    "gsplat>=1.4.0",
+    "opencv-python-headless>=4.10.0",
+    "plyfile>=1.0.3",
+    "pillow>=10.0.0",
+    "scikit-image>=0.24.0",
+    "lpips>=0.1.4",
+    "pytorch-msssim>=1.0.0",
+]
+
+# 3DGS training via Nerfstudio's splatfacto (adaptive density control, SH, eval).
+recon-ns = [
+    "nerfstudio>=1.1.5",
+    "imageio-ffmpeg>=0.5.1",  # bundled ffmpeg binary; cluster has no system ffmpeg
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+# HPC-only project; avoid resolving macOS/Windows-only dependency branches
+# (nerfstudio's optional newrawpy pulls in a pre-release-only arm64/darwin wheel).
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+# nerfstudio's pymeshlab pin (2025.7.post1, mesh-export only, unused by splatfacto
+# train/eval) requires glibc 2.35; this cluster has 2.34. Pin to the latest version
+# with a manylinux_2_31 wheel.
+override-dependencies = ["pymeshlab==2023.12.post3"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+extend-select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "N",    # pep8-naming
+    "I",    # isort (import sorting)
+    "UP",   # pyupgrade (modernize code)
+    "B",    # bugbear (catch bugs)
+    "SIM",  # flake8-simplify (simplify code)
+    "NPY",  # NumPy-specific rules
+    "RUF",  # Ruff-specific rules
+]
+ignore = [
+    "N803", # Argument name should be lowercase
+    "N806", # Variable should be lowercase
+    "N812", # Lowercase imported as non-lowercase
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

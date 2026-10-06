@@ -1,0 +1,3 @@
+# Experiment-level settings.
+# Override exp.seed, exp.device, etc. from the command line or child configs.
+# exp.run_func is set in config.yaml and dispatches to experiment/run.py.

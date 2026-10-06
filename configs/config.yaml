@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - experiment: default
+  - model: ${oc.env:MODEL,default}
+  - dataset: ${oc.env:DATASET,default}
+  - logger: wandb/default
+  - metric: default
+  - hydra: default
+
+exp:
+  seed: 42
+  device: # null = auto-select (cuda if available, else cpu)
+  log_dir: # set at runtime by utils.hydra.preprocess_config()
+  run_func:
+    _target_: experiment.run.run
